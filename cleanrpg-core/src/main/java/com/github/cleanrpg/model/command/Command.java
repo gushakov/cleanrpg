@@ -1,4 +1,4 @@
-package com.github.cleanrpg.command;
+package com.github.cleanrpg.model.command;
 
 /**
  * Value object modeling a command as entered by a player.

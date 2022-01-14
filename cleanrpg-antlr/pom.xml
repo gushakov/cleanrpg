@@ -13,6 +13,12 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.github</groupId>
+            <artifactId>cleanrpg-core</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.antlr</groupId>
             <artifactId>antlr4</artifactId>
             <version>${antlr4.version}</version>

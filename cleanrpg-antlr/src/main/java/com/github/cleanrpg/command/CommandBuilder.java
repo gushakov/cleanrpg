@@ -1,5 +1,6 @@
 package com.github.cleanrpg.command;
 
+import com.github.cleanrpg.model.command.Command;
 import org.antlr.v4.runtime.ParserRuleContext;
 
 public interface CommandBuilder<C extends ParserRuleContext> {

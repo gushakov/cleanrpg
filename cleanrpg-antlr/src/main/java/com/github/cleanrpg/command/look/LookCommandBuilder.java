@@ -1,8 +1,9 @@
 package com.github.cleanrpg.command.look;
 
 import com.github.cleanrpg.antlr4.CommandParser;
-import com.github.cleanrpg.command.Command;
+import com.github.cleanrpg.model.command.Command;
 import com.github.cleanrpg.command.CommandBuilder;
+import com.github.cleanrpg.model.command.LookCommand;
 
 public class LookCommandBuilder implements CommandBuilder<CommandParser.LookContext> {
 

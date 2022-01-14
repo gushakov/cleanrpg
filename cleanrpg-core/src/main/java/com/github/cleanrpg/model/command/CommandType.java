@@ -1,4 +1,4 @@
-package com.github.cleanrpg.command;
+package com.github.cleanrpg.model.command;
 
 /**
  * Enumeration of all possible commands in a game.

@@ -1,7 +1,5 @@
-package com.github.cleanrpg.command.look;
+package com.github.cleanrpg.model.command;
 
-import com.github.cleanrpg.command.Command;
-import com.github.cleanrpg.command.CommandType;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Value;

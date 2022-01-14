@@ -2,6 +2,7 @@ package com.github.cleanrpg.command;
 
 import com.github.cleanrpg.antlr4.CommandLexer;
 import com.github.cleanrpg.antlr4.CommandParser;
+import com.github.cleanrpg.model.command.Command;
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
 
