@@ -1,4 +1,4 @@
-package com.github.cleanrpg.command.look;
+package com.github.cleanrpg.command;
 
 import com.github.cleanrpg.antlr4.CommandParser;
 import com.github.cleanrpg.model.command.Command;

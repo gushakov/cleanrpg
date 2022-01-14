@@ -2,7 +2,6 @@ package com.github.cleanrpg.command;
 
 import com.github.cleanrpg.antlr4.CommandBaseListener;
 import com.github.cleanrpg.antlr4.CommandParser;
-import com.github.cleanrpg.command.look.LookCommandBuilder;
 import lombok.Getter;
 import org.antlr.v4.runtime.ParserRuleContext;
 
