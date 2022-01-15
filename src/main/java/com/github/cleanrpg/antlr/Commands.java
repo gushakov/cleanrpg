@@ -1,4 +1,4 @@
-package com.github.cleanrpg.command;
+package com.github.cleanrpg.antlr;
 
 import com.github.cleanrpg.antlr4.CommandLexer;
 import com.github.cleanrpg.antlr4.CommandParser;

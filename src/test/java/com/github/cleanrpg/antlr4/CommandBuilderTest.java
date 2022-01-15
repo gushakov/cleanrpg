@@ -1,8 +1,8 @@
 package com.github.cleanrpg.antlr4;
 
-import com.github.cleanrpg.command.CommandParseError;
+import com.github.cleanrpg.antlr.CommandParseError;
+import com.github.cleanrpg.antlr.Commands;
 import com.github.cleanrpg.model.command.CommandType;
-import com.github.cleanrpg.command.Commands;
 import com.github.cleanrpg.model.command.LookCommand;
 import org.junit.jupiter.api.Test;
 

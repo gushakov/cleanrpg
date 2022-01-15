@@ -1,4 +1,4 @@
-package com.github.cleanrpg.command;
+package com.github.cleanrpg.antlr;
 
 public class CommandParseError extends RuntimeException {
     public CommandParseError(String message) {
