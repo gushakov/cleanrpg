@@ -2,12 +2,12 @@ package com.github.cleanrpg.antlr;
 
 import com.github.cleanrpg.antlr4.CommandBaseListener;
 import com.github.cleanrpg.antlr4.CommandParser;
+import com.github.cleanrpg.model.command.Command;
 import lombok.Getter;
 import org.antlr.v4.runtime.ParserRuleContext;
 
 public class CommandBuildingListener extends CommandBaseListener {
 
-    @Getter
     private CommandBuilder<? extends ParserRuleContext> commandBuilder;
 
     @Override
@@ -24,6 +24,13 @@ public class CommandBuildingListener extends CommandBaseListener {
         else {
             error();
         }
+    }
+
+    public Command getCommand(){
+        if (commandBuilder == null){
+            throw new CommandParseError("Command builder is null");
+        }
+        return commandBuilder.getCommand();
     }
 
     private void error(){

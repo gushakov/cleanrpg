@@ -1,4 +1,4 @@
-package com.github.cleanrpg.server;
+package com.github.cleanrpg.client;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -8,7 +8,7 @@ import org.springframework.scheduling.concurrent.ThreadPoolExecutorFactoryBean;
 import java.util.concurrent.ExecutorService;
 
 @Configuration
-public class ServerConfig {
+public class ClientsConfig {
 
     @Bean
     public ThreadPoolExecutorFactoryBean clientsThreadPoolsFactory() {

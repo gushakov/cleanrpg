@@ -3,7 +3,10 @@ package com.github.cleanrpg.antlr;
 import com.github.cleanrpg.antlr4.CommandLexer;
 import com.github.cleanrpg.antlr4.CommandParser;
 import com.github.cleanrpg.model.command.Command;
-import org.antlr.v4.runtime.*;
+import org.antlr.v4.runtime.BailErrorStrategy;
+import org.antlr.v4.runtime.CharStreams;
+import org.antlr.v4.runtime.CodePointCharStream;
+import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
 
 public class Commands {
@@ -20,8 +23,7 @@ public class Commands {
         } catch (Throwable e) {
             throw new CommandParseError(e);
         }
-        CommandBuilder<? extends ParserRuleContext> commandBuilder = listener.getCommandBuilder();
-        return commandBuilder.getCommand();
+        return listener.getCommand();
     }
 
 }

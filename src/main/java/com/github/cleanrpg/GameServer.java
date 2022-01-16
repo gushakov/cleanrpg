@@ -1,5 +1,6 @@
-package com.github.cleanrpg.server;
+package com.github.cleanrpg;
 
+import com.github.cleanrpg.client.ClientTask;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
