@@ -1,4 +1,4 @@
-package com.github.cleanrpg.client;
+package com.github.cleanrpg.server;
 
 import com.github.cleanrpg.antlr.CommandParseError;
 import com.github.cleanrpg.antlr.Commands;

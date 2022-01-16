@@ -1,6 +1,5 @@
-package com.github.cleanrpg.client;
+package com.github.cleanrpg.server;
 
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.concurrent.ThreadPoolExecutorFactoryBean;
@@ -8,7 +7,7 @@ import org.springframework.scheduling.concurrent.ThreadPoolExecutorFactoryBean;
 import java.util.concurrent.ExecutorService;
 
 @Configuration
-public class ClientsConfig {
+public class ServerConfig {
 
     @Bean
     public ThreadPoolExecutorFactoryBean clientsThreadPoolsFactory() {
@@ -19,7 +18,6 @@ public class ClientsConfig {
     }
 
     @Bean
-    @Qualifier("clients")
     public ExecutorService clients() {
         try {
             return clientsThreadPoolsFactory().getObject();

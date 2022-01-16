@@ -1,29 +1,23 @@
-package com.github.cleanrpg;
+package com.github.cleanrpg.server;
 
-import com.github.cleanrpg.client.ClientTask;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.concurrent.ExecutorService;
 
-@SpringBootApplication
+@Service
 @Slf4j
 public class GameServer implements CommandLineRunner {
 
     @Autowired
     @Qualifier("clients")
     private ExecutorService clients;
-
-    public static void main(String[] args) {
-        SpringApplication.run(GameServer.class, args);
-    }
 
     @Override
     public void run(String... args) throws Exception {
