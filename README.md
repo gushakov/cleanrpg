@@ -1,3 +1,5 @@
+:warning: Work in progress
+
 ## Clean RPG
 
 A configurable text-based RPG game played via telnet. Demonstrates several techniques in
